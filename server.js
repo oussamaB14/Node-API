@@ -84,17 +84,4 @@ app.delete("/products/:id", async (req, res) => {
         res.status(500).json({ message: "Failed to delete the product" });
     }
 });
-// Get all products from the database
-// app.get("/products", (req, res) => {
-//   const product = mongo.model("Product", {
-//     name: String,
-//     price: Number,
-//   });
-//   product
-//     .find()
-//     .sort({ date: -1 }) // Sort by date in descending order
-//     .then((data) => {
-//       res.json(data);
-//     })
-//     .catch((err) => {
-//       console.log(err);
+
